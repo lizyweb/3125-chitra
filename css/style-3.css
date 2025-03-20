@@ -1,0 +1,300 @@
+:root {
+    --brand: #01b5fb;
+    --sub: #6ac754;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+/*** Carousel Hero Header Start ***/
+.header-carousel {
+    position: relative;
+  }
+  
+  .header-carousel .owl-nav .owl-prev {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: var(--brand);
+    color: var(--bs-white);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  .header-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: var(--brand);
+    color: var(--bs-white);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  .header-carousel .owl-nav .owl-prev,
+  .header-carousel .owl-nav .owl-next {
+    transition: 0.5s;
+  }
+  
+  .header-carousel .owl-nav .owl-prev:hover,
+  .header-carousel .owl-nav .owl-next:hover {
+    box-shadow: inset 150px 0 0 0 var(--bs-light) !important;
+    color: var(--brand) !important;
+  }
+  
+  @media (max-width: 576px) {
+  
+    .header-carousel .owl-nav .owl-prev,
+    .header-carousel .owl-nav .owl-next {
+      top: 630px;
+      transition: 0.5s;
+    }
+  
+    .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
+      width: 95% !important;
+    }
+  
+  }
+  
+  .header-carousel .header-carousel-item,
+  .header-carousel .header-carousel-item img {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    /* margin-top: 95px; */
+    display: block;
+    object-fit: cover;
+    transition: 0.5s;
+  
+  }
+  
+  @media (max-width: 992px) {
+  
+    .header-carousel .header-carousel-item,
+    .header-carousel .header-carousel-item img {
+      margin-top: 0;
+      transition: 0.5s;
+    }
+  
+  }
+  
+  @media (min-width: 992px) {
+  
+    .header-carousel .owl-nav .owl-prev,
+    .header-carousel .owl-nav .owl-next {
+      margin-top: 50px;
+    }
+  }
+  
+  .header-carousel .header-carousel-item .carousel-caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .5);
+  }
+  
+  .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
+    position: relative;
+    width: 75%;
+  
+  }
+  .carousel-caption-content h1 {
+    font-weight: bold;
+    background: linear-gradient(45deg, #283180, #5C9EDB, #4DD2FF, #23809F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+  /*** Carousel Hero Header End ***/
+  
+  /*** Button Start ***/
+  .btn {
+    font-weight: 600;
+    transition: .5s;
+  }
+  
+  .btn.btn-slide {
+    /* box-shadow: inset 0 0 0 0 white; */
+    background-color: var(--sub);
+    color: white;
+    border: none;
+  }
+  
+  .btn.btn-slide:hover {
+    /* box-shadow: inset 300px 0 0 0 var(--brand); */
+    color: var(--brand) !important;
+    background-color: transparent;
+    border: 1px solid var(--brand);
+  }
+  /* ==========================================  */
+  /* Main section containing the image and the content */
+.vision-mission-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #f7f9fc;
+    position: relative;
+}
+
+/* Image Container (left side) */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%; /* Adjust this as needed */
+    height: auto;
+  
+}
+
+/* Content Container (right side) */
+.content-container {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Mission Box (top right) */
+.mission-box {
+    background-color: #A594F9;
+    border-radius: 30px 0px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    /* margin-bottom: 50px; */
+    transition: background-color 0.3s ease;
+
+}
+
+/* Vision Box (bottom right with margin) */
+.vision-box {
+    background-color: #A594F9;
+    border-radius: 30px 0px;
+    padding: 30px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px; /* Positioned lower than mission */
+    transition: background-color 0.3s ease;
+    margin-left: 100px;
+}
+
+
+/* Common heading style */
+.mission-box h2, .vision-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 2px solid yellow;
+}
+
+/* Common paragraph style */
+.mission-box p, .vision-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .vision-mission-section {
+        flex-direction: column;
+    }
+
+    .image-container, .content-container {
+        width: 100%;
+    }
+
+    .image-container {
+        margin-bottom: 30px;
+    }
+
+    .mission-box, .vision-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .vision-box {
+        margin-top: 30px; /* Reduced margin for mobile */
+    }
+}
+/* Custom styles */
+.circle-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50% 30% 20%;
+  object-fit: cover;
+}
+.content-box {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+  
+}
+.content-box h4 {
+  font-size: 1.5rem;
+  color: #333;
+ 
+}
+.content-box hr {
+  width: 50px;
+  border: 2px solid blue;
+  margin-bottom: 15px;
+}
+.content-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+.value-box:hover .icon-box {
+  transform: translateY(-10px);
+}
+
+/* cottact start  */
+/**Contact**/
+.contact{
+  background: linear-gradient(rgba(2, 26, 54, 0.7), rgba(2, 26, 54, 0.7)), url("../img/image-3/contact.jpg") no-repeat fixed center 0/cover;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+}
+.conact-details{
+  background-color: white;
+  padding: 50px 50px;
+  border-radius: 10px;
+}
+
+.contact-map{
+  border-top: 5px solid rgb(3, 61, 253);
+}
+@media (max-width: 991px) {
+  .conact-details{
+    padding: 50px 20px;
+  }
+}
